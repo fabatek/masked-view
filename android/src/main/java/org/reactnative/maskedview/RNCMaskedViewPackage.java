@@ -11,15 +11,15 @@ import java.util.Collections;
 import java.util.List;
 
 public class RNCMaskedViewPackage implements ReactPackage {
-  @Override
-  public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
-    return Collections.emptyList();
-  }
+    @Override
+    public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
+        return Collections.emptyList();
+    }
 
-  @Override
-  public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
-      return Arrays.<ViewManager>asList(
-            new RNCMaskedViewManager()
-      );
-  }
+    @Override
+    public List<ViewManager> createViewManagers(ReactApplicationContext reactApplicationContext) {
+        return Arrays.<ViewManager>asList(
+                new RNCMaskedViewManager()
+        );
+    }
 }
